@@ -123,6 +123,14 @@ This is implemented into the SWIFT-Emulator with
 
 .. code-block:: python
 
+    from swiftemulator.emulators import gaussian_process
+    schecter_emulator = gaussian_process.GaussianProcessEmulator()
+    schecter_emulator.fit_model(model_specification=model_specification,
+                                model_parameters=model_parameters,
+                                model_values=model_values)
+
+.. code-block:: python
+
     from swiftemulator.mocking import mock_sweep
 
     center = {"log_M_star": 11.5, "alpha": -2.0}
