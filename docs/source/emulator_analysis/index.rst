@@ -53,6 +53,8 @@ data.
 
 .. code-block:: python
 
+    import matplotlib.pyplot as plt
+
     data_by_cc = schecter_ccheck.build_mocked_model_values_original_independent()
 
     for unique_identifier in range(20):
